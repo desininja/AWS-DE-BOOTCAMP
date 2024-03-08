@@ -1,0 +1,24 @@
+Documentation of the process and commands used to create and deploy the
+Lambda Layer.
+
+
+
+
+First created a python file matrix_utils.py which had function inside it as transpose_matrix(matrix).
+Moved the file inside a folder named python.
+Then using CLI zipped the python folder and named it as python.zip, below is the command:
+zip -r python.zip python
+
+Then went to the lambda--> layers, clicked on create layer, gave layer a name: matrix-transpose-layer uploaded the zip file.
+Chose the compatible architectures as x86_64, arm64.
+chose the compatible runtime as python3.8, python3.9, python3.11.
+
+Then clicked on Create button to create the layer.
+
+After this went to the Lambda function and attached the created layer to the function.
+
+
+=================================================================================================
+
+Event json:
+Created multiple matrices inside the event, please see the event.json file.
