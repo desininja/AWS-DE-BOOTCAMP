@@ -1,0 +1,39 @@
+{
+    "Records": [
+      {
+        "eventVersion": "2.1",
+        "eventSource": "aws:s3",
+        "awsRegion": "us-east-1",
+        "eventTime": "2024-03-10T17:52:11.319Z",
+        "eventName": "ObjectCreated:Put",
+        "userIdentity": {
+          "principalId": "A1D9TZ2PJ3ERB3"
+        },
+        "requestParameters": {
+          "sourceIPAddress": "122.177.106.217"
+        },
+        "responseElements": {
+          "x-amz-request-id": "1A2WH6F7HK1F2WWB",
+          "x-amz-id-2": "PJz08SU6tLaVdGJw+V+J3bJGAliqY45niglUUqFDn5ctfWLjfJX8yBdZHEM/VWsDZEoD8bSY1wytPXaMMY3rfsxt8eqwdsXu"
+        },
+        "s3": {
+          "s3SchemaVersion": "1.0",
+          "configurationId": "c6f759cf-f2f5-49a2-abc5-f50c0f82e1de",
+          "bucket": {
+            "name": "doordash-source-zn",
+            "ownerIdentity": {
+              "principalId": "A1D9TZ2PJ3ERB3"
+            },
+            "arn": "arn:aws:s3:::doordash-source-zn"
+          },
+          "object": {
+            "key": "2024-03-09-raw_input.json",
+            "size": 774,
+            "eTag": "2ca7d4b42284eca1dac74a25e1f39c83",
+            "sequencer": "0065EDF34B4994A606"
+          }
+        }
+      }
+    ]
+  }
+  
