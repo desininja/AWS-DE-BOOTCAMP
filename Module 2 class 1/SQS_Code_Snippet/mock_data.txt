@@ -1,0 +1,9 @@
+{
+"bookingId": "asdfasd97897asdfa",
+"userId": "User4", 
+"propertyId": "Property3", 
+"location": "New York, USA", 
+"startDate": "2024-02-02", 
+"endDate": "2024-02-05", 
+"price": "500"
+}
