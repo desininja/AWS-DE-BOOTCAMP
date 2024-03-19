@@ -1,0 +1,21 @@
+customer_id,name,debit_card_number,debit_card_type,bank_name
+1001,Ravi Kumar,1234567890123456,Visa,State Bank of India
+1002,Anjali Gupta,2345678901234567,Mastercard,HDFC Bank
+1003,Rahul Singh,3456789012345678,American Express,ICICI Bank
+1004,Priya Sharma,4567890123456789,Discover,Axis Bank
+1005,Suresh Patel,5678901234567890,Visa,Kotak Mahindra Bank
+1006,Divya Joshi,6789012345678901,Mastercard,IndusInd Bank
+1007,Amit Mishra,7890123456789012,American Express,Yes Bank
+1008,Meena Reddy,8901234567890123,Discover,Punjab National Bank
+1009,Rajesh Gupta,9012345678901234,Visa,Bank of Baroda
+1010,Neeta Kapoor,0123456789012345,Mastercard,Canara Bank
+1011,Prakash Singh,1234567890123456,American Express,Union Bank of India
+1012,Sunita Shah,2345678901234567,Discover,Bank of India
+1013,Sanjay Verma,3456789012345678,Visa,Indian Bank
+1014,Anita Das,4567890123456789,Mastercard,Bank of Maharashtra
+1015,Alok Yadav,5678901234567890,American Express,Allahabad Bank
+1016,Meera Singh,6789012345678901,Discover,Andhra Bank
+1017,Arjun Gupta,7890123456789012,Visa,Canara Bank
+1018,Anushka Sharma,8901234567890123,Mastercard,Axis Bank
+1019,Aryan Khan,9012345678901234,American Express,Yes Bank
+1020,Deepika Patel,0123456789012345,Discover,HDFC Bank
