@@ -1,0 +1,28 @@
+Part 1: Generate Mock Data                ----------------- done
+Part 2: Store Data in S3 Data Lake        ----------------- done
+Part 3: Setup RDS MYSQL Table instance    ----------------- done
+Part 4: AWS Glue Job for Data Aggregation ----------------- done 
+
+
+
+123456789
+
+
+mysql -h debit-card-customer.cl80ocesmj0s.us-east-1.rds.amazonaws.com -p 3306 -u mysql_admin -p 123456789
+
+SQL Queries to create a database and table:
+
+create database debit_card_spends;
+
+use debit_card_spends;
+
+CREATE TABLE IF NOT EXISTS daily_aggregation (
+    customer_id VARCHAR(10),
+    debit_card_number VARCHAR(255),
+    bank_name VARCHAR(255),
+    total_amount_spend FLOAT, 
+    PRIMARY KEY (customer_id)
+);
+
+
+select * from daily_aggregation;
