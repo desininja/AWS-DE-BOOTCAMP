@@ -30,7 +30,7 @@ def generate_daily_transactions(num_transactions):
         customer = random.choice(customer_dimension)
         quantity = random.randint(1, 5)
         price = float(product['price'])
-        transaction_date = datetime.now() - timedelta(days=i)
+        transaction_date = datetime.now()
         payment_type = random.choice(payment_types)
         status = random.choice(transaction_statuses)
         
@@ -49,9 +49,9 @@ def generate_daily_transactions(num_transactions):
 
 # Generate daily transactions
 daily_transactions = generate_daily_transactions(100)
-
+transaction_date = datetime.now()
 # Write daily transactions to CSV file
-csv_file = f"transactions_{datetime.now().strftime('%Y-%m-%d')}.csv"
+csv_file = f"transactions_{transaction_date.strftime('%Y-%m-%d')}.csv"
 with open(csv_file, mode='w', newline='') as file:
     writer = csv.DictWriter(file, fieldnames=["transaction_id", "customer_id", "product_id", "quantity", "price", "transaction_date", "payment_type", "status"])
     writer.writeheader()
