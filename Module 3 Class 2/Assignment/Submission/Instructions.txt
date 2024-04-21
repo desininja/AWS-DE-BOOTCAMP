@@ -1,0 +1,11 @@
+Instruction on How to deploy:
+
+Create a new codebuild in AWS, and upload the files into a github repo. 
+From there after pushing the changes, the buildspec.yml file will copy the 
+the files from github directories to S3 buckets. 
+We need to create MWAA cluster and give the directories of s3 buckets of dags
+requirement files into it. 
+We also need to spin up EMR cluster and Redshift cluster. 
+As soon as the all the required clusters are up and running, we can go to 
+Airflow UI and trigger the dags from there and see our tasks getting started.
+
