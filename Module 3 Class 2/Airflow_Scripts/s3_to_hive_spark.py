@@ -8,7 +8,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Define the path to the CSV file on S3
-s3_path = "s3://food-data-gds/"
+s3_path = "s3://food-data-gds1/"
 
 # Define your Hive table name
 hive_table_name = "food_report.inspection_data"
