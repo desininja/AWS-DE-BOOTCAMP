@@ -1,6 +1,6 @@
 import base64
 import json
-from datetime import datetime
+
 
 def lambda_handler(event, context):
     output_records = []
@@ -15,10 +15,10 @@ def lambda_handler(event, context):
             
             # Access the 'eventName' and 'ApproximateCreationDateTime' from the payload
             event_name = payload_json['eventName']
-            approx_creation_datetime = payload_json['dynamodb']['ApproximateCreationDateTime']
+            #approx_creation_datetime = payload_json['dynamodb']['ApproximateCreationDateTime']
             
             # Convert the Unix timestamp to a human-readable date format
-            creation_datetime = datetime.utcfromtimestamp(approx_creation_datetime).isoformat() + 'Z'
+            #creation_datetime = datetime.utcfromtimestamp(approx_creation_datetime).isoformat() + 'Z'
 
             # Access the data in the 'dynamodb' key
             dynamodb_data = payload_json['dynamodb']
@@ -32,7 +32,7 @@ def lambda_handler(event, context):
                 'quantity': int(new_image['quantity']['N']),
                 'price': float(new_image['price']['N']),
                 'cdc_event_type': event_name,  # Include the event name
-                'creation_datetime': creation_datetime  # Include the formatted creation datetime
+                #'creation_datetime': creation_datetime  # Include the formatted creation datetime
             }
 
             # Convert the transformed data to a JSON string and then encode it as base64
@@ -47,6 +47,7 @@ def lambda_handler(event, context):
             })
 
         except Exception as e:
+            
             # If there's any error with processing the record, mark it as ProcessingFailed but still return the recordId
             output_records.append({
                 'recordId': record['recordId'],
