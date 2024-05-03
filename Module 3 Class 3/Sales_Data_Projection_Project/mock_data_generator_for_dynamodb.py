@@ -7,7 +7,7 @@ from decimal import Decimal
 # dynamodb = boto3.resource('dynamodb')
 session = boto3.Session(profile_name='default', region_name='us-east-1')
 dynamodb = session.resource('dynamodb')
-table = dynamodb.Table('OrdersRawTable') 
+table = dynamodb.Table('OrdersRawTable')
 
 def generate_order_data():
     """Generate random order data."""
