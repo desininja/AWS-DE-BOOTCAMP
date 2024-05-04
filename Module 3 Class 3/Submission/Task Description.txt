@@ -1,0 +1,3 @@
+First the mock script generates the event based on 4 types: product added, product removed, product quantity increased and product quantity decreased. generated event is then published to kinesis data stream, this kinesis data stream passes the data to event bridge pipe, which further transfers the data to lambda which validates it to the data present in dynamoDB and process the inventory updatation. 
+
+No Challenges were faced during this assignment. 
