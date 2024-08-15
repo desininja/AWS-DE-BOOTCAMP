@@ -30,7 +30,7 @@ def generate_daily_transactions(num_transactions):
         customer = random.choice(customer_dimension)
         quantity = random.randint(1, 5)
         price = float(product['price'])
-        transaction_date = datetime.now()
+        transaction_date = datetime.now() 
         payment_type = random.choice(payment_types)
         status = random.choice(transaction_statuses)
         
